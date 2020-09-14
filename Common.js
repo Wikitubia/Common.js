@@ -78,7 +78,7 @@ UserTagsJS.modules.custom = {
     'HanselElGato': ['discordfounder', 'retired'],
     'FkeBld': ['discordadmin', 'verifedyt'],
     'BoaDaSnakeMan': ['discordadmin'],
-    'Davidjl123': ['discordadmin', 'verifiedyt'],
+    'Davidjl123': ['discordmod', 'verifiedyt'],
     'JustLeafy': ['discordadmin'],
     'DomiTheGamer': ['rollback'],
     'The Nameless Lancer': ['rollback'],
@@ -197,4 +197,7 @@ UserTagsJS.modules.custom = {
     'BaconBanditBoy' :['verifiedyt'],
     'Easiorigami' :['verifiedyt'],
     'Zer0sVoid' :['verifiedyt'],
+    'BFDIBebble': ['verifiedyt'],
+    'DandereJordan': ['verifiedyt'],
+    'Cookie95YT': ['verifiedyt'],
 };
