@@ -84,6 +84,8 @@ UserTagsJS.modules.custom = {
     'The Nameless Lancer': ['rollback'],
     'Bendrownedfan111': ['rollback'],
     'Yangyong08': ['rollback'],
+    'BadBlitz808': ['rollback'],
+    'Toasty Dinosaur': ['rollback'],
     'Sidemen19': ['discordadmin'],
     'Cluckster': ['discordadmin'],
     'EpicNinjaDude37': ['discordadmin', 'verifiedyt'],
