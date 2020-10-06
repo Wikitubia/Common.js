@@ -1,4 +1,3 @@
-
 mw.loader.load('https://apis.google.com/js/platform.js');
 
 if(wgPageName == 'Special:Upload' || wgPageName == 'Special:MultipleUpload') {
