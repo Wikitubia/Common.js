@@ -1,3 +1,4 @@
+
 mw.loader.load('https://apis.google.com/js/platform.js');
 
 if(wgPageName == 'Special:Upload' || wgPageName == 'Special:MultipleUpload') {
@@ -80,12 +81,12 @@ UserTagsJS.modules.custom = {
     'BoaDaSnakeMan': ['discordadmin'],
     'Davidjl123': ['discordmod', 'verifiedyt'],
     'JustLeafy': ['discordadmin'],
-    'DomiTheGamer': ['rollback'],
+    'DomiTheGamer': ['rollback', 'verifiedyt'],
     'The Nameless Lancer': ['rollback'],
     'Bendrownedfan111': ['rollback'],
     'Yangyong08': ['rollback'],
     'BadBlitz808': ['rollback'],
-    'Toasty Dinosaur': ['rollback'],
+    'Toasty Dinosaur': ['rollback', 'verifiedyt'],
     'Sidemen19': ['discordadmin'],
     'Cluckster': ['discordadmin'],
     'EpicNinjaDude37': ['discordadmin', 'verifiedyt'],
@@ -93,7 +94,7 @@ UserTagsJS.modules.custom = {
     'ITurkishmapping': ['discordmod'],
     'Popularmmos12345': ['verifiedyt'],
     'Rickyberwick': ['verifiedyt'],
-    'BadBoyBlu': ['verifiedyt'],
+    'IMightBeBlu': ['verifiedyt'],
     'ZHDdude46': ['verifiedyt'],
     'GgGibi': ['verifiedyt'],
     'Cartoon Apocalypse': ['verifiedyt'],
@@ -202,4 +203,15 @@ UserTagsJS.modules.custom = {
     'BFDIBebble': ['verifiedyt'],
     'DandereJordan': ['verifiedyt'],
     'Cookie95YT': ['verifiedyt'],
+    'SparkySSBU1120':['verifiedyt'],
+    'LDoubleJ': ['verifiedyt'],
+    'T3Trends': ['verifiedyt'],
+    'MikachuXD': ['verifiedyt'],
+    'Linkmon99': ['verifiedyt'],
+    '77Pacer' :['verifiedyt'],
+    'Chris6d' :['verifiedyt'],
+    '7zs' :['verifiedyt'],
+    'Kiodiego' :['verifiedyt'],
+    'Timmylogoyt' :['verifiedyt'],
+    'Javier10223' :['verifiedyt'],
 };
