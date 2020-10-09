@@ -213,4 +213,8 @@ UserTagsJS.modules.custom = {
     'Kiodiego' :['verifiedyt'],
     'Timmylogoyt' :['verifiedyt'],
     'Javier10223' :['verifiedyt'],
+    'Katzotic1' :['verifiedyt'],
+    'Meipon' :['verifiedyt'],
+    'JoyConJames' :['verifiedyt'],
+    'Aidanlockrow' :['verifiedyt'],
 };
