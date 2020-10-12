@@ -217,4 +217,6 @@ UserTagsJS.modules.custom = {
     'Meipon' :['verifiedyt'],
     'JoyConJames' :['verifiedyt'],
     'Aidanlockrow' :['verifiedyt'],
+    'Techrecorder' :['verifiedyt'],
+    'Dabhdude' :['verifiedyt'],
 };
