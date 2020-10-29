@@ -44,6 +44,8 @@ window.railWAM = {
     logPage: 'Project:WAM Log'
 };
 
+window.ajaxIndicator = 'https://slot1-images.wikia.nocookie.net/__cb1603999865266/common/skins/common/images/ajax.gif';
+
 /*
  * UserTags configuration
  * Reads data from [[MediaWiki:Custom-UserTags.json]]
