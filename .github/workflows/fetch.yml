@@ -1,0 +1,23 @@
+name: Fetch from source
+on:
+  schedule:
+    - cron:  0 0 * * 2,5
+  workflow_dispatch:
+
+jobs:
+  Get-Source:
+    env:
+      FETCH_URL: 'https://youtube.fandom.com/wiki/MediaWiki:Common.js?action=raw'
+    name: Fetch and commit source
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo '[INFO] Setting Git up...'
+      - run: git config --global user.name 'Actions'; git config --global user.email 'actions@users.noreply.github.com'
+      - run: echo "[INFO] Scheduled run each 0:00 UTC every Tuesday and Friday"
+      - run: echo "[INFO] Fetching from site..."
+      - run: echo "[INFO] $GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
+      - run: wget -P /home/runner/work/Common.js -O Common.js '${{env.FETCH_URL}}'
+      - run: git add Common.js
+      - run: git commit -m 'Fetch latest revision from URL' && git push -u origin main || echo '[INFO] Source is the same as repository. Skipping push...'
+      - run: echo '[EXIT] Job done!'; exit 0
