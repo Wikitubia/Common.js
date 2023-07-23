@@ -1,17 +1,19 @@
-function loadYTButton() {
-  if ($('div.g-ytsubscribe').length) {
+var conStyle = "background-color:black;color:red;font-weight:bold;font-family:Rubik;padding:1%";
+console.group("%cDebugging the subscribe button. Please message an administrator if you're seeing an error prefixed with [YT] in the following nested console messages, ignore anything that does not have the prefix.", conStyle);
+console.debug("[YT] Initial target:", document.querySelector("div.g-ytsubscribe"));
+
+var loadInterval = setInterval(function() {
+  console.debug("[YT] Target:", document.querySelector("div.g-ytsubscribe"));
+  if (!document.querySelector("div.g-ytsubscribe")) {
+    clearInterval(loadInterval);
+    console.debug("[YT] Stopping the loop");
+    console.assert(!document.querySelector("div.g-ytsubscribe"));
+    console.groupEnd();
+  } else {
+    console.count("[YT] Firing payload");
     mw.loader.load('https://apis.google.com/js/platform.js');
-    return;
-  };
-  setInterval(function () { loadYTButton() }, 1000);
-};
-
-addEventListener("DOMContentLoaded", (event) => {
-  if ($("body").hasClass("ns-0")) {
-    loadYTButton();
-  };
-});
-
+  }
+}, 1000);
 
 
 // change label
@@ -26,6 +28,21 @@ window.lastEdited = {
 
 window.ajaxIndicator = 'https://slot1-images.wikia.nocookie.net/__cb1603999865266/common/skins/common/images/ajax.gif';
 
+(function ($, mw) {
+    function loadHighlights() {
+        var deferred = $.Deferred(),
+            apiEndpoint = 'https://youtube.fandom.com/api.php',
+            page = 'MediaWiki:Custom-UserTags.json',
+            params;
+
+        params = {
+            action: 'query',
+            format: 'json',
+            prop: 'revisions',
+            rvprop: 'content',
+            titles: page,
+            indexpageids: 1
+        };
         mw.loader.using(['mediawiki.util'], function () {
             $.ajax(apiEndpoint, {
                 data: params,
@@ -86,4 +103,4 @@ mw.hook('dev.i18n').add(function (i18n) {
         });
     });
 });
-importArticle({ type: 'script', article: 'u:dev:I18n-js/code.js' });
+importArticle({ type: 'script', article: 'u:dev:MediaWiki:I18n-js/code.js' });
