@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo '[INFO] Setting Git up...'
-      - run: git config --global user.name 'Actions'; git config --global user.email 'actions@users.noreply.github.com'
+      - run: git config --global user.name 'Actions'; git config --global user.email 'actions@github.com'
       - run: echo "[INFO] Scheduled run each 0:00 UTC every Tuesday and Friday"
       - run: echo "[INFO] Fetching from site..."
       - run: echo "[INFO] $GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
